@@ -1,0 +1,334 @@
+/* === RESET GERAL === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* === CORPO DA PÁGINA === */
+body, html {
+  height: 100%;
+  font-family: Candara, Arial, sans-serif;
+  background: linear-gradient(to right, #85e4d4, rgb(207, 243, 250));
+  color: #031d2c;
+  scroll-behavior: smooth;
+}
+
+/* Container principal: menu lateral + conteúdo */
+.container {
+  display: flex;
+  min-height: 80.8svh;
+  background-color: #e8fafa;
+}
+
+/* === CABEÇALHO COM ANIMAÇÃO === */
+.cabecalho-animado {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(to bottom, #0d3349, #007a8a);
+  padding: 0.6rem 1.5rem;
+  color: #ffffff;
+  animation: fadeInHeader 1s ease-in-out;
+  flex-shrink: 0;
+  height: 60px;
+}
+
+@keyframes fadeInHeader {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.logo {
+  width: 66px;
+  height: auto;
+}
+
+.titulo {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* === MENU LATERAL === */
+.menu-lateral {
+  background: linear-gradient(to bottom, #0d3349, #007a8a);
+  color: white;
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  width: 160px;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+
+/* Container dos botões do menu */
+.botoes-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Botões principais do menu lateral */
+.btn-link {
+  background-color: #a6f3f2;
+  color: #031d2c;
+  padding: 1.2rem;
+  border-radius: 12px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.3rem;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.15);
+  user-select: none;
+}
+
+.btn-link:hover {
+  background-color: #cdf7fb;
+  transform: scale(1.05);
+  box-shadow: 4px 4px 10px rgba(14, 5, 5, 0.25);
+}
+
+
+.link-sobre {
+  display: block;
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin-top: 3rem;
+  transition: color 0.3s ease;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.link-sobre:hover {
+  color: #6cfaff;
+  
+}
+
+.link-sobre::before {
+
+  font-size: 1.4rem;
+  vertical-align: middle;
+  margin-right: 0.3rem;
+}
+
+/* === SEÇÃO DE APRESENTAÇÃO === */
+.apresentacao {
+  flex: 1;
+  display: flex;
+    flex-wrap: wrap;
+  flex-direction: column;
+  align-items:  flex-start;
+  padding: 4rem 5rem 4rem 4rem; /* Reduzido para evitar espaço com o footer */
+  background: url('image/animais.png') no-repeat center center;
+  background-size: contain;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+
+/* Aumentar imagem de fundo apenas em desktop */
+@media (min-width: 1024px) {
+  .apresentacao {
+    background-size: 100% auto;
+  }
+
+  .menu-lateral {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
+/* Título de boas-vindas */
+.apresentacao h2 {
+  width: 100%;
+  font-size: 1.3rem;
+  margin-bottom: 1.2rem;
+  color: #003050;
+  background-color: #ffffff;
+  padding: 0.3rem 19rem;
+  border-radius: 15px;
+  font-weight: 600;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+  user-select: none;
+}
+
+/* Blocos de apresentação */
+.textos-blocos {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+}
+
+.texto-apresentacao {
+  flex: 1;
+  min-width: 250px;
+  font-size: 1rem;
+  line-height: 1.4;
+  background-color: rgba(166, 243, 242, 0.6);
+  padding: 0.6rem 0.9rem;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(96, 217, 221, 0.7);
+  user-select: text;
+}
+
+/* === PÁGINAS SECUNDÁRIAS === */
+.conteudo-pagina-secundaria {
+  padding: 3rem;
+  background-color: #e6fafa;
+}
+
+.secao-info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+  background-color: #ffffffc9;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.img-info {
+  width: 150px;
+  border-radius: 10px;
+}
+
+.secao-info p {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.secao-info ul {
+  list-style-type: disc;
+  padding-left: 1.2rem;
+}
+
+/* === BOTÕES PADRÃO === */
+button,
+.btn-link {
+  cursor: pointer;
+  user-select: none;
+}
+
+.btn-voltar-topo {
+  background-color: #a6f3f2;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-voltar-topo:hover {
+  background-color: #d6ffff;
+  transform: scale(1.03);
+}
+
+.btn-voltar-topo:active {
+  transform: scale(0.97);
+}
+
+.btn-rodape {
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  background-color: #007a8a;
+  color: white;
+  border: none;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-rodape:hover {
+  background-color: #009aa7;
+  transform: scale(1.05);
+}
+
+.btn-rodape:active {
+  transform: scale(0.95);
+}
+
+.btn-topo {
+  background-color: #ffffff;
+  color: #007a8a;
+  border: 2px solid #007a8a;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-topo:hover {
+  background-color: #f6c6f8;
+  transform: scale(1.1);
+}
+
+/* === RODAPÉ === */
+footer {
+  background-color: #0a2235;
+  color: #ffffffcc;
+  text-align: center;
+  padding: 1.5rem 3rem;
+  font-size: 0.8rem;
+  user-select: none;
+  
+}
+
+/* === RESPONSIVIDADE === */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .menu-lateral {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem 0;
+  }
+
+  .btn-link {
+    width: 100%;
+    max-width: 150px;
+    font-size: 0.8rem;
+    margin-bottom: 0.1rem;
+  }
+
+  .link-sobre {
+    margin-top: 14rem;
+    font-size: 0.8rem;
+  }
+
+  .apresentacao {
+    padding: 0.4rem 1rem 9rem 1rem;
+  }
+
+  .apresentacao h2 {
+    font-size: 1rem;
+    text-align: center;
+    padding: 0.7rem 1rem;
+  }
+
+  .textos-blocos {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+
+}
