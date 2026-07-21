@@ -128,3 +128,6 @@ Projeto desenvolvido exclusivamente para fins acadêmicos como parte da Atividad
 ## ❤️ 
 
 > "Pequenas atitudes podem transformar vidas. Ao conectar pessoas dispostas a ajudar com quem dedica sua vida ao cuidado dos animais, a tecnologia torna-se uma poderosa ferramenta de solidariedade."
+ ---
+ ## Hospedagem
+> > 🚀 Esta página está hospedada gratuitamente através do **GitHub Pages**.
