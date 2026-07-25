@@ -4,7 +4,7 @@
 
 O aMarPet Litoral é um projeto de extensão desenvolvido pela estudante Izabela Santana do curso de **Análise e Desenvolvimento de Sistemas**, com o objetivo de utilizar a tecnologia como ferramenta de impacto social.
 
-A plataforma foi criada para conectar doadores a organizações não governamentais (ONGs), abrigos e protetores independentes de animais que atuam no Litoral Norte do Estado de São Paulo, incentivando ações de solidariedade em prol da causa animal.
+A página Web, foi criada para conectar doadores a organizações não governamentais (ONGs), abrigos e protetores independentes de animais que atuam no Litoral Norte do Estado de São Paulo, incentivando ações de solidariedade em prol da causa animal.
 
 ---
 
